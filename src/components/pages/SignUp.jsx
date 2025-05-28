@@ -1,4 +1,5 @@
 import Footer from "../sections/Footer";
+import './pages.css'
 
 function SignUp() {
   return (
