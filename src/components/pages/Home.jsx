@@ -3,7 +3,10 @@ import Footer from "../sections/Footer"
 function Home(){
     return(
         <div>
-            <h1>This is the Home Page</h1>
+            <div></div>
+            <div>
+
+            </div>
             <div>
                 <Footer/>
              </div>
