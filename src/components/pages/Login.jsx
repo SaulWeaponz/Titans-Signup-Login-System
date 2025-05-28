@@ -4,7 +4,7 @@ import './pages.css'
 function Login() {
   return (
     <div>
-        <div className="container">
+        <div className="container1">
             <h1>Welcome to the Login Page.</h1>
         </div>
       <div>
@@ -18,7 +18,7 @@ function Login() {
               name="name"
               required
             />
-             <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               placeholder="Enter Email"
