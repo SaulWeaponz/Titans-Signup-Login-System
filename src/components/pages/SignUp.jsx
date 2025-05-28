@@ -4,6 +4,9 @@ import './pages.css'
 function SignUp() {
   return (
     <div>
+        <div className="container1">
+            <h1>Welcome to the SignUp Page.</h1>
+        </div>
       <div>
         <form >
           <div className="container">
