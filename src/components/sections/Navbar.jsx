@@ -9,10 +9,10 @@ function NavBar(){
                         <Link   className="Listlink" to="/">Home</Link>
                     </li>
                     <li  className="listitem">
-                        <Link  className="Listlink" to="/Login">Register</Link>
+                        <Link  className="Listlink" to="/SignUp">Register</Link>
                     </li>
                     <li  className="listitem">
-                        <Link className="Listlink" to="/SignUp">Login</Link>
+                        <Link className="Listlink" to="/Login">Login</Link>
                     </li>
                 </ul>
             </nav>
