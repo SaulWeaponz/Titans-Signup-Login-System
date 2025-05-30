@@ -45,11 +45,14 @@ function Dashboard() {
     setMessage("Profile updated successfully!");
   };
 
+  // const handleLogout = () => {
+  //   localStorage.removeItem("currentUser");
+  //   navi("/"); // redirect using React Router
+  // };
   const handleLogout = () => {
-    localStorage.removeItem("currentUser");
-    navi("/"); // redirect using React Router
-  };
-
+  localStorage.removeItem("currentUser");
+  window.location.href = "/login"; // or use navigate
+};
 
   if (!user) return <p>No user found.</p>;
 
