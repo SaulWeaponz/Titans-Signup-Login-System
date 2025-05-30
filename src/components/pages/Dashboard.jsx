@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import './pages.css'; // Make sure this has styles for circular images, etc.
 import Footer from "../sections/Footer";
-
+import { useNavigate } from "react-router-dom";
 function Dashboard() {
   const [user, setUser] = useState(null);
   const [editMode, setEditMode] = useState(false);
   const [updatedUser, setUpdatedUser] = useState({ username: "", email: "", image: "" });
   const [message, setMessage] = useState("");
+  const navi = useNavigate();
 
   // Fetch latest user on load
   useEffect(() => {
@@ -43,6 +44,12 @@ function Dashboard() {
     setEditMode(false);
     setMessage("Profile updated successfully!");
   };
+
+  const handleLogout = () => {
+    localStorage.removeItem("currentUser");
+    navi("/"); // redirect using React Router
+  };
+
 
   if (!user) return <p>No user found.</p>;
 
@@ -94,6 +101,9 @@ function Dashboard() {
             </>
           )}
         </div>
+         <button className="btn btn-primary" onClick={handleLogout()}>
+                Logout
+        </button>
       </div>
       <div>
         <Footer />
