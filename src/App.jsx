@@ -3,6 +3,7 @@ import Login from "./components/pages/Login";
 import SignUp from "./components/pages/SignUp";
 import NavBar from "./components/sections/Navbar";
 import Dashboard from "./components/pages/Dashboard";
+import ProtectedRoute from "./components/ProtectedRoute";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/SignUp" element={<SignUp/>}/>
             <Route path="/Login" element={<Login/>}/>
+            
             {/* Protected route */}
           <Route
            path="/dashboard"
