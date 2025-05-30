@@ -14,6 +14,9 @@ function NavBar(){
                     <li  className="listitem">
                         <Link className="Listlink" to="/Login">Login</Link>
                     </li>
+                    <li  className="listitem">
+                        <Link className="Listlink" to="/dashboard">Dashboard</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
